@@ -1,0 +1,6 @@
+a,b,c=input().split()
+a1,b1,c1=input().split()
+a2,b2,c2=input().split()
+print("%s %s %s" % (a,a1,a2))
+print("%s %s %s" % (b,b1,b2))
+print("%s %s %s" % (c,c1,c2))
