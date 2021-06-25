@@ -1,0 +1,7 @@
+s1 = input()
+s2 = input()
+s3 = input()
+s4 = input()
+s = s1.replace(s2, "")
+intersection = s.find(s3) + len(s3)
+print(s[:intersection] + s4 + s[intersection:])
