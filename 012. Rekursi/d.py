@@ -1,8 +1,8 @@
 def checkPalindrom(s):
     if len(s) < 2:
-        return True
+        return "YA"
     if s[0] != s[len(s) - 1]:
-        return False
+        return "BUKAN"
     return checkPalindrom(s[1 : len(s) - 1])
 
 
