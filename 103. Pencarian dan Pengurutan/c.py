@@ -1,4 +1,4 @@
-# dunno why these got an RTE, will review it later
+# got a TLE on one TC, will fix improve this later
 n, tc = [int(q) for q in input().split()]
 name = []
 phone = []
@@ -10,11 +10,9 @@ for i in range(n):
 
 def f(x, firstIndex, lastIndex):
     midIndex = (firstIndex + lastIndex) // 2
-    if midIndex < 0 or midIndex > n - 1:
-        return "NIHIL"
-    elif name[midIndex] == x:
+    if name[midIndex] == x:
         return phone[midIndex]
-    elif firstIndex == lastIndex:
+    elif firstIndex >= lastIndex:
         return "NIHIL"
     elif x < name[midIndex]:
         return f(x, firstIndex, midIndex - 1)
